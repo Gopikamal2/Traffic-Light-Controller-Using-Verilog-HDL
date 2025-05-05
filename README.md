@@ -1,8 +1,8 @@
 # Traffic-Light-Controller-Using-Verilog-HDL
-Aim
+# Aim
 To design and simulate a traffic light controller using Verilog HDL, and verify its functionality through a testbench in the Vivado 2023.1 simulation environment. The objective is to control the traffic lights for a junction with a specific time-based sequence for Red, Yellow, and Green lights.
 
-Apparatus Required
+# Apparatus Required
 Vivado 2023.1 or equivalent Verilog simulation tool.
 Computer system with a suitable operating system.
 FPGA board (optional for hardware verification).
@@ -29,8 +29,8 @@ Save and Document Results:
 
 Capture screenshots of the waveform and save the simulation logs to include in your report.
 
-Verilog Code for Traffic Light Controller
-
+# Verilog Code for Traffic Light Controller
+```
 // traffic_light_controller.v
 module traffic_light_controller (
     input wire clk,
@@ -84,9 +84,9 @@ module traffic_light_controller (
         endcase
     end
 endmodule
-
-Testbench for Traffic Light Controller
-
+```
+# Testbench for Traffic Light Controller
+```
 // traffic_light_controller_tb.v
 `timescale 1ns / 1ps
 
@@ -128,7 +128,10 @@ module traffic_light_controller_tb;
     end
 
 endmodule
+```
+# Output
 
+![Screenshot 2025-05-05 130208](https://github.com/user-attachments/assets/a0610ad3-30c9-4658-b312-2770b8ea93d2)
 
-Conclusion
+# Conclusion
 In this experiment, a traffic light controller was successfully designed and simulated using Verilog HDL. The design controlled the traffic lights to switch between Green, Yellow, and Red in a cyclic manner based on timing intervals. The testbench verified that the traffic lights followed the correct sequence and timing. The simulation results confirm the correct functionality of the traffic light controller, demonstrating the effectiveness of Verilog HDL in designing FSM-based controllers for real-world applications.
